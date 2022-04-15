@@ -1,0 +1,695 @@
+      
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<style>
+  body{
+
+    background-color: #455b6b;
+  }
+.gallery {
+  display: flex;
+  padding: 2px;
+  transition: 0.3s;
+  background-color: #000000;
+}
+/* .gallery:hover .gallery__image {
+  filter: grayscale(1);
+} */
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+.gallery__link {
+  margin: 2px;
+  overflow: hidden;
+}
+.gallery__link:hover .gallery__image {
+  filter: grayscale(0);
+}
+.gallery__link:hover .gallery__caption {
+  opacity: 1;
+}
+.gallery__thumb {
+  position: relative;
+}
+.gallery__image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery__image:hover {
+  transform: scale(1.1);
+}
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+  transition: 0.3s;
+}
+/* List */
+
+
+.tilesWrap {
+	padding: 0;
+	margin: 50px auto;
+	list-style: none;
+	text-align: center;
+  background-color: #858585;
+}
+.tilesWrap li {
+	display: inline-block;
+	width: 20%;
+	min-width: 200px;
+	max-width: 230px;
+	padding: 80px 20px 40px;
+	position: relative;
+	vertical-align: top;
+	margin: 10px;
+	font-family: 'helvetica', san-serif;
+	min-height: 25vh;
+	background: #262a2b;
+	border: 1px solid #252727;
+	text-align: left;
+}
+
+
+.tilesWrap li p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #b7b7b7;
+	margin-top: 5px;
+}
+
+
+
+
+.tilesWrap li:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	background: #fff;
+	transform: skew(2deg, 2deg);
+}
+.tilesWrap li:after {
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+       
+ 
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+      <title>about</title>
+    </head>
+    <body >
+      
+      <!-- 1 . navbar -->
+    
+     
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #455b6b;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Connect with me</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active " aria-current="page" href="/">Home</a>
+            </li>
+            <!--  -->
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="color: aliceblue;" >about</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page"  href="fav">fav</a>
+            </li>
+
+            
+<!--  -->
+           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                have fun
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="nasa" target="_blank">NASA Pic of the day</a></li>
+                <li><a class="dropdown-item" href="movies" target="_blank">MOVIES</a></li>
+              
+                <li><a class="dropdown-item" href="more" target="_blank">Surprise</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+
+  
+  
+   
+ 
+
+
+  
+          
+  
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+
+<div class="gallery">
+	<div class="gallery__column">
+		<a  class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a3.jpg" alt="try later" class="gallery__image">
+				<figcaption class="gallery__caption">8th class, fb ka account banaya tha</figcaption>
+			</figure>
+		</a>
+
+		<a   class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a7.jpg" alt="try later"  class="gallery__image">
+				<figcaption class="gallery__caption">"forcefully bheja fancy dress competition"</figcaption>
+			</figure>
+		</a>
+
+    <a   class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a5.jpg" alt="try later"  class="gallery__image">
+				<figcaption class="gallery__caption">"Dude banane ki koshish !lmao"</figcaption>
+			</figure>
+		</a>
+	</div>
+	
+	<div class="gallery__column">
+		<a   class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a1.jpg" alt="try later"  class="gallery__image">
+				<figcaption class="gallery__caption">bachpan se hero !</figcaption>
+			</figure>
+		</a>
+		
+		<a   class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a6.jpg" alt="try later"  class="gallery__image">
+				<figcaption class="gallery__caption">"12th class mein bhi baccha lag raha hoon"</figcaption>
+			</figure>
+		</a>
+
+		<a href="#"  class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a10.jpg" alt="try later" class="gallery__image">
+				<figcaption class="gallery__caption">" engineering nhi leni thi"</figcaption>
+			</figure>
+		</a>
+	</div>
+	
+	<div class="gallery__column">
+		<a   class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a2.jpg" alt="try later"  class="gallery__image">
+				<figcaption class="gallery__caption">4 feb 2002 , "1 saal prithvi pe " </figcaption>
+			</figure>
+		</a>
+    <a  class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a11.jpg" alt="try later"  class="gallery__image">
+				<figcaption class="gallery__caption">"gpay pe 3 rs ke cashback ki khushi"</figcaption>
+			</figure>
+		</a>
+
+    <a   class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a12.jpg" alt="try later"  class="gallery__image">
+				<figcaption class="gallery__caption">mama's boy</figcaption>
+			</figure>
+		</a>
+	</div>
+	
+	<div class="gallery__column">
+    <a   class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a4.jpg" alt="try later"  class="gallery__image">
+				<figcaption class="gallery__caption">"shirt bhi pehen liya  tha jabardasti"</figcaption>
+			</figure>
+		</a>
+
+    <a  class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a8.jpg" alt="try later"  class="gallery__image">
+				<figcaption class="gallery__caption">""Aai ,mavshi,sarthak ani mi"</figcaption>
+			</figure>
+		</a>
+		
+		<a class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="/static/a9.jpg" alt="try later" class="gallery__image">
+				<figcaption class="gallery__caption">aisa kon selfi leta hai ! chii</figcaption>
+			</figure>
+		</a>
+	</div>
+</div>
+  
+  
+
+  
+<ul class="tilesWrap">
+<li>
+	<p>What are you the proudest of?</p>
+	<p style="color: yellow;">My nature</p>
+</li>
+
+<li>
+	<p>What’s something I would never guess about you?</p>
+	<p style="color: yellow;">the real me</p>
+</li>
+ 
+
+<li>
+	<p>What are three words that best describe you?</p>
+	<p style="color: yellow;">Real,dedicated and shy</p>
+</li>
+
+<li>
+	<p>If you could take a week off from your regular life to immerse yourself in learning something new, what would it be?</p>
+	<p style="color: yellow;">playing guitar</p>
+</li>
+
+<li>
+	<p>Where do you most want to visit in the world?</p>
+	<p style="color: yellow;">Anywhere in Europe or NA</p>
+</li>
+
+<li>
+	<p>What’s one hobby you’d love to get into?</p>
+	<p style="color: yellow;"> Saying No</p>
+</li>
+
+<li>
+	<p>What’s the most beautiful place you’ve ever seen?</p>
+	<p style="color: yellow;">Tsunami islands(tarkarli river,Malvan)</p>
+</li>
+
+<li>
+	<p>If you could go back in time ten years and tell yourself something, what would you say?</p>
+	<p style="color: yellow;">plz dont try to become a good student</p>
+</li>
+
+<li>
+	<p>If you could erase one event from history, which one would you erase?</p>
+	<p style="color: yellow;">big bang</p>
+</li>
+
+<li>
+	<p>Would you rather have 10 hobbies or one passion?</p>
+	<p style="color: yellow;"> i guess 10 hobbies</p>
+</li>
+
+
+
+<li>
+	<p>What TV shows are you watching right now?</p>
+	<p style="color: yellow;"> peaky blinders (S6)</p>
+</li>
+
+<li>
+	<p>What are you excited about most in your life right now?</p>
+	<p style="color: yellow;">coming years (samaj rhe ho...)</p>
+</li>
+
+<li>
+	<p>What do you consider as the best gift you could receive on your next birthday?</p>
+	<p style="color: yellow;"> if you are reading this,i would like you to raise funds for my Mustang</p>
+</li>
+
+<li>
+	<p>What's the most spontaneous thing you've done in your life?</p>
+	<p style="color: yellow;">actually i do it everyday ,"Nako re gharche oradtil"</p>
+</li>
+
+<li>
+	<p>What's a charity or cause that you support?</p>
+	<p style="color: yellow;"> animals>>>>>humans</p>
+</li>
+
+<li>
+	<p>What's your favorite way of killing time when you're not working</p>
+	<p style="color: yellow;">watch astro videos,listen songs or overthink(most)</p>
+</li>
+
+<li>
+	<p>What’s your favorite thing to do with your friends?</p>
+	<p style="color: yellow;">anything</p>
+</li>
+
+<li>
+	<p>What’s the most useful thing you own?</p>
+	<p style="color: yellow;">brain</p>
+</li>
+
+<li>
+	<p>What's your biggest fear?</p>
+	<p style="color: yellow;">dying single ! L0l</p>
+</li>
+
+<li>
+	<p>Where is one place you’d love to travel to again? What is the top holiday on your bucket list?</p>
+	<p style="color: yellow;"> travel again: Bangalore/Goa.</p>
+</li>
+
+<li>
+	<p>What is the craziest thing you have ever done?</p>
+	<p style="color: yellow;">thoroughly destroyed college computer</p>
+</li>
+
+<li>
+	<p>What was your favorite subject at school and why?</p>
+	<p style="color: yellow;"> i 'll be honest , it was history</p>
+</li>
+
+<li>
+	<p>What would you change about today?</p>
+	<p style="color: yellow;">what not ? </p>
+</li>
+
+<li>
+	<p>What does a typical day look like for you?</p>
+	<p style="color: yellow;">eat,sleep,study,timpeass,repeat</p>
+</li>
+
+
+<li>
+	<p>What do you like best and least about school?</p>
+	<p style="color: yellow;"> least: i was afriad of being scolded/beaten by teachers. best : friends,games and vo baki sab...</p>
+</li>
+
+<li>
+	<p>Which cartoon character do you wish was real?</p>
+	<p style="color: yellow;">Doraemon</p>
+</li>
+
+<li>
+	<p>What is the most interesting thing you have ever tasted?</p>
+	<p style="color: yellow;"> Lobsters</p>
+</li>
+
+<li>
+	<p>What superpower would you like to have and why?</p>
+	<p style="color: yellow;"> reading others mind</p>
+</li>
+
+<li>
+	<p>What Disney/cartoon character was you inexplicably afraid of as a kid?</p>
+	<p style="color: yellow;"> not cartoon but "Tatya Vinchu"was nightmare </p>
+</li>
+
+
+
+<li>
+	<p>Are you an early bird or a night owl?</p>
+	<p style="color: yellow;"> i dont sleep(sleep at school),so kind of both</p>
+</li>
+
+<li>
+	<p>Do you like reading? If so, what genre of books do you like?</p>
+	<p style="color: yellow;">NO</p>
+</li>
+
+<li>
+	<p>Are you a coffee or tea person?
+
+  </p>
+	<p style="color: yellow;">Coffee anyday</p>
+</li>
+
+
+
+<li>
+	<p>Who has inspired your career path most in your life?</p>
+	<p style="color: yellow;">my mom</p>
+</li>
+
+<li>
+	<p>What’s one professional skill you’re working on building?</p>
+	<p style="color: yellow;"> how to use people :)</p>
+</li>
+
+
+
+<li>
+	<p>Do I have any superstitions or beliefs?</p>
+	<p style="color: yellow;"> No</p>
+</li>
+
+<li>
+	<p>Am I a dog person or a cat person?</p>
+	<p style="color: yellow;"> Dog  </p>
+</li>
+
+
+
+
+
+
+<li>
+	<p>What's your favorite TV show?</p>
+	<p style="color: yellow;">hollywood: ""breaking bad", TMKOC</p>
+</li>
+
+<li>
+	<p>What is your favorite book?</p>
+	<p style="color: yellow;">i dont read</p>
+</li>
+
+<li>
+	<p>What was your first favorite movie as a child?</p>
+	<p style="color: yellow;">Spiderman</p>
+</li>
+
+
+<li>
+	<p>What is your favorite country you have visited?</p>
+	<p style="color: yellow;"> yet to...</p>
+</li>
+
+<li>
+	<p>What is your favorite food?</p>
+	<p style="color: yellow;"> Butter chicken,chhole bhatore, chicken roll/shwarma,orange juice</p>
+</li>
+
+<li>
+	<p>What’s your favorite place to visit in your free time?
+  </p>
+	<p style="color: yellow;"> walking randomly</p>
+</li>
+
+<li>
+	<p>What is your favorite season of the year?</p>
+	<p style="color: yellow;">Monsoon</p>
+</li>
+
+<li>
+	<p>What do you think is the greatest invention in your lifetime and why?</p>
+	<p style="color: yellow;">Computer</p>
+</li>
+
+<li>
+	<p>What is the best song ever?</p>
+	<p style="color: yellow;"> many but if one i would say "mann mera"</p>
+</li>
+
+
+<li>
+	<p>What is the best compliment you have ever received?</p>
+	<p style="color: yellow;">"are  kiti chaan !!!"</p>
+</li>
+
+<li>
+	<p>What is the saddest movie you have seen?</p>
+	<p style="color: yellow;">Not saddest ,but cried alot - "Hachi :dogs tale"</p>
+</li>
+
+<li>
+	<p>When is the most relaxing part of the day for you?</p>
+	<p style="color: yellow;">after finishing work</p>
+</li>
+
+
+<li>
+	<p>What is the hottest place you have ever been to?</p>
+	<p style="color: yellow;">Mumbai</p>
+</li>
+
+<li>
+	<p>If you could do high school all over again, would you?</p>
+	<p style="color: yellow;">ya</p>
+</li>
+
+<li>
+	<p>introvert or an extrovert?</p>
+	<p style="color: yellow;">Introvert</p>
+</li>
+
+
+<li>
+	<p>What was the last movie I watched </p>
+	<p style="color: yellow;"> The Batman</p>
+</li>
+
+<li>
+	<p>What would you change about yourself if you could?</p>
+	<p style="color: yellow;"> wont change</p>
+</li>
+
+<li>
+	<p>What really makes you angry?</p>
+	<p style="color: yellow;"> world is full of oppurtunists</p>
+</li>
+
+<li>
+	<p>if you could go back in time, what year would you travel to?</p>
+	<p style="color: yellow;"> world war I</p>
+</li>
+
+<li>
+	<p> If you could go back in time to change one thing, what would it be?</p>
+	<p style="color: yellow;">bata nhi skta aise ! secret hai</p>
+</li>
+
+<li>
+	<p>Would you rather trade intelligence for looks or looks for intelligence?</p>
+	<p style="color: yellow;"> 2nd</p>
+</li>
+
+
+<li>
+	<p>What is your favorite childhood memory?</p>
+	<p style="color: yellow;">whole childhood</p>
+</li>
+
+<li>
+	<p> What's your favorite movie?</p>
+	<p style="color: yellow;"> holly: donnie darko ,bolly:ZNMD</p>
+</li>
+
+<li>
+	<p>What's the craziest thing you’ve done in the name of love?</p>
+	<p style="color: yellow;"> Dont ask </p>
+</li>
+
+
+
+
+<li>
+	<p> Who was your first crush?</p>
+	<p style="color: yellow;">ohho dikkat hojayegi </p>
+</li>
+<li>
+	<p>What celebrity would you like to meet at Starbucks for a cup of coffee?</p>
+	<p style="color: yellow;">Elon musk</p>
+</li>
+
+<li>
+	<p>What song would you say best sums you up?</p>
+	<p style="color: yellow;">o mere dil ke chain</p>
+</li>
+
+<li>
+	<p>Who is the most intelligent person you know?</p>
+	<p style="color: yellow;"> chod do kisika naam lunga to dusra meri lega</p>
+</li>
+
+<li>
+	<p>If you had to describe yourself as an animal, which one would it be?</p>
+	<p style="color: yellow;">donkey</p>
+</li>
+<li>
+	<p>Who knows you the best?</p>
+	<p style="color: yellow;">actually yhi to problem hai ,NO one</p>
+</li>
+
+<li>
+	<p>Who is your celebrity crush?</p>
+	<p style="color: yellow;"> list hai vaai puri</p>
+</li>
+
+<li>
+	<p>Who’s your favourite fictional character?</p>
+	<p style="color: yellow;"> Light Yagami</p>
+</li>
+<li>
+	<p>What’s your dream car?</p>
+	<p style="color: yellow;">Mustang</p>
+</li>
+<li>
+	<p>What’s your favourite snack?</p>
+	<p style="color: yellow;">grilled mayo sandwich</p>
+</li>
+
+
+
+
+
+
+
+</ul>
+  
+  
+  
+      <!-- Optional JavaScript; choose one of the two! -->
+  
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+      -->
+    </body>
+  </html>

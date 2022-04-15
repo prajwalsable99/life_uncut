@@ -1,0 +1,390 @@
+html { scroll-behavior: smooth; }
+.lang{
+
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+/* here            */
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+.ir {
+display: block;
+overflow: visible;
+padding: 0 0 100%;
+position: relative;
+height: 0;
+width: 100%;
+}
+
+.ir > * {
+position: absolute;
+height: 100%;
+width: 100%;
+top: 0;
+left: 0;
+}
+
+
+
+.soc {
+display: block;
+font-size: 0;
+list-style: none;
+margin: 0 auto;
+padding: 4.8rem;
+text-align: center;
+width: 110rem;
+max-width: 100%;
+}
+.soc li {
+display: inline-block;
+margin: 1.2rem;
+}
+.soc a, .soc svg {
+display: block;
+}
+.soc a {
+height: 9.6rem;
+width: 9.6rem;
+}
+
+.icon-32:hover,.icon-31:hover, .icon-30:hover, .icon-29:hover, .icon-28:hover, .icon-27:hover, .icon-26:hover, .icon-25:hover, .icon-24:hover, .icon-23:hover, .icon-22:hover, .icon-21:hover, .icon-20:hover, .icon-19:hover, .icon-18:hover, .icon-17:hover, .icon-16:hover, .icon-15:hover, .icon-14:hover, .icon-13:hover, .icon-12:hover, .icon-11:hover, .icon-10:hover, .icon-9:hover, .icon-8:hover, .icon-7:hover, .icon-6:hover, .icon-5:hover, .icon-4:hover, .icon-3:hover, .icon-2:hover, .icon-1:hover {
+border-radius: 100%;
+fill: #0e1a25;
+transform: scale(1.25);
+transition: background-color 0.5s, transform 0.5s ease-out;
+}
+
+
+
+.icon-15 {
+fill: #26d9d9;
+}
+.icon-15:hover {
+background: #26d9d9;
+}
+
+
+
+.icon-18 {
+fill: #266ed9;
+}
+.icon-18:hover {
+background: #266ed9;
+}
+
+
+
+.icon-26 {
+fill: #d926b5;
+}
+.icon-26:hover {
+background: #d926b5;
+}
+
+.icon-27 {
+fill: #d92691;
+}
+.icon-27:hover {
+background: #d92691;
+}
+
+.icon-28 {
+fill: #d9266e;
+}
+.icon-28:hover {
+background: #d9266e;
+}
+
+.icon-29 {
+fill: #d9264a;
+}
+.icon-29:hover {
+background: #d9264a;
+}
+
+.icon-30 {
+fill: #d92626;
+}
+.icon-30:hover {
+background: #d92626;
+}
+
+.icon-31 {
+fill: #d94a26;
+}
+.icon-31:hover {
+background: #d94a26;
+}
+
+.icon-32 {
+fill: #d96e26;
+}
+.icon-32:hover {
+background: #d96e26;
+}
+
+
+
+.icon-111:hover {
+  background:black;
+  }
+  .icon-111:hover{ 
+  border-radius: 100%;
+  fill: #0e1a25;
+  transform: scale(1.25);
+  transition: background-color 0.5s, transform 0.5s ease-out;
+  }
+
+
+
+  .icon-112:hover {
+    background:black;
+    }
+    .icon-112:hover{ 
+    border-radius: 100%;
+    fill: #0e1a25;
+    transform: scale(1.25);
+    transition: background-color 0.5s, transform 0.5s ease-out;
+    }
+  
+
+
+
+
+
+
+
+
+.timeline {
+display: flex;
+flex-direction: column;
+width: 50vw;
+margin: 5% auto;
+}
+.timeline__event {
+background: #fff;
+margin-bottom: 20px;
+position: relative;
+display: flex;
+margin: 20px 0;
+border-radius: 8px;
+box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25), 0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+.timeline__event__title {
+font-size: 1.2rem;
+line-height: 1.4;
+text-transform: uppercase;
+font-weight: 600;
+color: #9251ac;
+letter-spacing: 1.5px;
+}
+.timeline__event__content {
+padding: 20px;
+}
+.timeline__event__date {
+color: #f6a4ec;
+font-size: 1.5rem;
+font-weight: 600;
+white-space: nowrap;
+}
+.timeline__event__icon {
+border-radius: 8px 0 0 8px;
+background: #9251ac;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-basis: 40%;
+font-size: 2rem;
+color: #9251ac;
+padding: 20px;
+}
+.timeline__event__icon i {
+position: absolute;
+top: 50%;
+left: -65px;
+font-size: 2.5rem;
+transform: translateY(-50%);
+}
+.timeline__event__description {
+flex-basis: 60%;
+}
+.timeline__event:after {
+content: "";
+width: 2px;
+height: 100%;
+background: #9251ac;
+position: absolute;
+top: 52%;
+left: -3.5rem;
+z-index: -1;
+}
+.timeline__event:before {
+content: "";
+width: 5rem;
+height: 5rem;
+position: absolute;
+background: #f6a4ec;
+border-radius: 100%;
+left: -6rem;
+top: 50%;
+transform: translateY(-50%);
+border: 2px solid #9251ac;
+}
+.timeline__event--type2:before {
+background: #87bbfe;
+border-color: #555ac0;
+}
+.timeline__event--type2:after {
+background: #555ac0;
+}
+.timeline__event--type2 .timeline__event__date {
+color: #87bbfe;
+}
+.timeline__event--type2 .timeline__event__icon {
+background: #555ac0;
+color: #555ac0;
+}
+.timeline__event--type2 .timeline__event__title {
+color: #555ac0;
+}
+.timeline__event--type3:before {
+background: #aff1b6;
+border-color: #24b47e;
+}
+.timeline__event--type3:after {
+background: #24b47e;
+}
+.timeline__event--type3 .timeline__event__date {
+color: #aff1b6;
+}
+.timeline__event--type3 .timeline__event__icon {
+background: #24b47e;
+color: #24b47e;
+}
+.timeline__event--type3 .timeline__event__title {
+color: #24b47e;
+}
+.timeline__event:last-child:after {
+content: none;
+}
+
+@media (max-width: 786px) {
+.timeline__event {
+flex-direction: column;
+}
+
+.timeline__event__icon {
+border-radius: 4px 4px 0 0;
+}
+}
+
+
+
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
+  
+  .bn29 {
+    border: none;
+    padding: 0.8em 2.5em;
+    outline: none;
+    color: white;
+    font-style: 1.2em;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.45);
+  }
+  
+  .bn29:before,
+  .bn29:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10em;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 105%;
+    height: 105%;
+    content: "";
+    z-index: -2;
+    background-size: 400% 400%;
+    background: linear-gradient(
+      60deg,
+      #f79533,
+      #f37055,
+      #ef4e7b,
+      #a166ab,
+      #5073b8,
+      #1098ad,
+      #07b39b,
+      #6fba82
+    );
+  }
+  
+  .bn29:before {
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-animation: pulse 10s infinite ease;
+    animation: pulse 10s infinite ease;
+  }
+  
+  .bn29:after {
+    -webkit-filter: blur(0.3px);
+    filter: blur(0.3px);
+  }
+  
+  .bn29:hover:before {
+    width: 115%;
+    height: 115%;
+  }
