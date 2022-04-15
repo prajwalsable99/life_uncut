@@ -1,8 +1,10 @@
-Flask==2.0.2
-requests==2.27.1
-tmdbv3api==1.7.6
+Flask==1.1.2
 gunicorn==19.9.0
 itsdangerous==1.1.0
 Jinja2==2.10.1
 MarkupSafe==1.1.1
+Werkzeug==0.15.5
+requests==2.27.1
+tmdbv3api==1.7.6
+
 
